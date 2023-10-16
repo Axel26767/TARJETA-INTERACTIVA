@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta Interactiva</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<div class="contenedor">
+  <img src="marketing-san-valentin-1.jpg" alt="" class="imagen">
+  <div id="mensaje">
+    <h2>¡Hola! 😊</h2>
+    <p class="">Eres como un algoritmo perfecto en mi día. <br> ¿Quieres descubrir un piropo programático?</p>
+    <button onclick="mostrarPiropo()">¡Sí, por supuesto!</button>
+    <p id="piropo"></p>
+  </div>
+</div>
+
+  <script>
+    function mostrarPiropo() {
+      const piropos = [
+        "¡Eres el clic que mi corazón siempre espera! 🖱️❤️",
+        "En el código de mi vida, tú eres la función más especial. ¡Haz clic para descubrirlo!",
+        "Eres como un bucle infinito de felicidad en mi día. ¡Haz clic para ver más!",
+        "En el HTML de mi vida, tú eres la etiqueta más importante. ¡Haz clic y descúbrelo!",
+        "Eres la respuesta a mi función de búsqueda de la felicidad. ¡Haz clic y descubre por qué!",
+        "Eres la excepción a mi regla general de no enamorarme. 💖",
+        "Eres como el código perfecto, difícil de escribir pero imposible de olvidar. 💻😍",
+        "Eres la API de mi felicidad, siempre accediendo a mi corazón. 🚀",
+        "Si fueras un lenguaje de programación, serías el montaje del amor, directo al corazón. 🔧❤️",
+        "Eres el loop que nunca quiero romper. 🔄",
+        "Si fueras un error, serías un error 404: Not Found en mi vida. Pero afortunadamente, te encontré. 🌐",
+        "Eres mi función favorita en este programa llamado vida. 🌈",
+        "Eres el CSS de mi HTML, el estilo a mi mundo. 🎨",
+        "Si fueras una variable, serías constante en mi corazón. 🌟",
+        "Nuestro amor es como un bucle infinito, nunca tiene fin. 💞",
+        "Eres el commit que nunca quiero revertir en mi repositorio del corazón. 📝❤️",
+        "Si fueras un algoritmo, serías O(1), porque eres constante y eficiente en hacerme feliz. 🤓🌟",
+        "Eres el NaN de mi vida, porque con nadie más tiene sentido. 🤷‍♂️❤️",
+        "Eres como un array, siempre te tengo en mi índice cero. 🔄💖",
+        "Si fueras una base de datos, serías NoSQL, porque tu amor no tiene esquemas. 📊❤️",
+        "Eres la función que siempre devuelve true en mi corazón. ✔️❤️",
+        "Si fueras un programa, serías open source, porque compartirte con el mundo sería increíble. 🌐❤️",
+        "Eres la clase principal en el programa de mi vida. 💼❤️",
+        "Eres mi int main() en el lenguaje del amor. Todo comienza contigo. 🌈❤️",
+        "Si fueras un bug, preferiría que fueras un bug de abrazos. 🐞🤗"
+      ];
+
+      const piropoAleatorio = piropos[Math.floor(Math.random() * piropos.length)];
+
+      const piropoElement = document.getElementById("piropo");
+      piropoElement.textContent = piropoAleatorio;
+      piropoElement.style.display = "block";
+    }
+  </script>
+  
+</body>
+</html>
